@@ -22,6 +22,10 @@ myApp.config(['$routeProvider', '$mdThemingProvider', function($routeProvider, $
             templateUrl: 'assets/views/routes/list.html',
             controller: 'ListController'
         }).
+        when('/recipe', {
+            templateUrl: 'assets/views/routes/recipe.html',
+            controller: 'RecipeController'
+        }).
         otherwise({
             redirectTo: 'home'
         });
